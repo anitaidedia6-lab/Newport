@@ -1,2 +1,0 @@
-# Newport
-portfolio website
