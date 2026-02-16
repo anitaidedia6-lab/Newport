@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV | Daniel Morgan</title>
+<link rel="stylesheet" href="styles.css">
+<script defer src="script.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Daniel Morgan</div>
+    <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="cv.html" class="active">CV</a>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</header>
+
+<section class="cv-section">
+
+    <h1>Professional Experience</h1>
+
+    <div class="card">
+        <h3>Full-Stack Developer – TechNova Solutions</h3>
+        <p>2022 – Present</p>
+        <ul>
+            <li>Developed scalable web applications using React, Node.js & Django</li>
+            <li>Designed RESTful APIs handling over 50k+ requests daily</li>
+            <li>Reduced server response time by 25% through backend optimization</li>
+            <li>Integrated Stripe and PayPal payment systems</li>
+            <li>Led UI redesign improving user engagement by 30%</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Backend Developer – ByteWave Technologies</h3>
+        <p>2020 – 2022</p>
+        <ul>
+            <li>Built Ruby on Rails REST APIs</li>
+            <li>Managed PostgreSQL database systems</li>
+            <li>Automated data processing pipelines using Python</li>
+            <li>Migrated legacy systems to modern frameworks</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Software Development Intern – Creative Labs Studio</h3>
+        <p>2019 – 2020</p>
+        <ul>
+            <li>Developed frontend modules using HTML, CSS & JavaScript</li>
+            <li>Designed UI mockups in Figma</li>
+            <li>Participated in QA testing and debugging</li>
+        </ul>
+    </div>
+
+    <h1>Major Projects</h1>
+
+    <div class="card">
+        <h3>E-Commerce Platform</h3>
+        <p>HTML, CSS, JavaScript, Node.js</p>
+        <ul>
+            <li>Authentication & cart system</li>
+            <li>Payment gateway integration</li>
+            <li>Fully responsive UI</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Hospital Appointment Booking System</h3>
+        <p>Python (Django)</p>
+        <ul>
+            <li>Patient authentication</li>
+            <li>Admin dashboard</li>
+            <li>Appointment scheduling system</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Task Management Application</h3>
+        <p>React & Firebase</p>
+        <ul>
+            <li>Cloud-based task tracking</li>
+            <li>Real-time database synchronization</li>
+        </ul>
+    </div>
+    <h1>Application Design Showcase</h1>
+
+<section class="app-showcase">
+
+    <div class="app-card">
+        <img src="images/eccommerce.jpg" alt="Ecommerce UI">
+        <h3>E-Commerce Platform</h3>
+        <p>Modern shopping interface with cart system & authentication.</p>
+        <a href="#" class="btn primary">Live Demo</a>
+    </div>
+
+    <div class="app-card">
+        <img src="images/hospital bookin system.jpg" alt="Hospital UI">
+        <h3>Hospital Booking System</h3>
+        <p>Clean dashboard with scheduling and admin management.</p>
+        <a href="#" class="btn primary">Live Demo</a>
+    </div>
+
+    <div class="app-card">
+        <img src="images/Task magnm..jpg" alt="Task App UI">
+        <h3>Task Management App</h3>
+        <p>Minimal productivity UI with cloud synchronization.</p>
+        <a href="#" class="btn primary">Live Demo</a>
+    </div>
+
+</section>
+
+<div class="download-section">
+    <a href="daniel-morgan-cv.pdf" download class="btn primary">
+        Download Full CV
+    </a>
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="modal-body"></div>
+    </div>
+</div>
+
+
+    <h1>Certifications</h1>
+
+    <div class="card">
+        <ul>
+            <li>Google UX Design Certificate</li>
+            <li>Meta Front-End Developer Certificate</li>
+            <li>AWS Cloud Practitioner (Foundational)</li>
+        </ul>
+    </div>
+
+    <h1>Technical Skills</h1>
+
+    <div class="card">
+        <p><strong>Languages:</strong> HTML5, CSS3, JavaScript, Python, Ruby</p>
+        <p><strong>Frameworks:</strong> React, Node.js, Django, Flask, Ruby on Rails</p>
+        <p><strong>Tools:</strong> Git, GitHub, Firebase, Figma</p>
+        <p><strong>Databases:</strong> PostgreSQL, MySQL</p>
+    </div>
+
+    <h1>Tech Video Blog</h1>
+
+<section class="video-blog">
+
+    <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        frameborder="0" allowfullscreen></iframe>
+        <h3>How to Build a Responsive Website from Scratch</h3>
+        <p>Step-by-step guide covering layout, responsiveness, and best practices.</p>
+    </div>
+
+    <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/Ke90Tje7VS0" 
+        frameborder="0" allowfullscreen></iframe>
+        <h3>The Importance of UI/UX in Modern Web Development</h3>
+        <p>Why design thinking matters in software engineering.</p>
+    </div>
+
+    <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/jS4aFq5-91M" 
+        frameborder="0" allowfullscreen></iframe>
+        <h3>5 Tips for Beginner Developers</h3>
+        <p>Practical advice for growing your programming skills.</p>
+    </div>
+
+</section>
+
+
+
+<footer>
+    <p>LinkedIn | GitHub</p>
+</footer>
+
+</body>
+</html>
