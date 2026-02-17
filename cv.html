@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Group 4 CV Page</title>
+
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #0f172a);
+    color: white;
+}
+
+/* NAVBAR */
+
+
+
+.download-btn-div{
+    display: flex;
+    margin-right: 100px;
+    justify-content: flex-end;
+}
+header {
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+}
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: #38bdf8;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #38bdf8;
+}
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+    text-shadow: 0 0 8px #38bdf8;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+
+/* Hero */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10%;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    margin: 20px 0;
+    color: #cbd5e1;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.primary {
+    background: #38bdf8;
+    color: #000;
+}
+
+.secondary {
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+
+.navbar button {
+    background: #00c6ff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* MEMBER BUTTONS */
+.member-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 90px 50px;
+}
+
+.member-list button {
+    background: #1c3b50;
+    border: 1px solid #00c6ff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.member-list button:hover {
+    background: #00c6ff;
+}
+
+/* CV CONTAINER */
+.cv-container {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    color: #333;
+    border-radius: 15px;
+    overflow: hidden;
+    display: none;
+}
+
+/* CV LAYOUT */
+.cv {
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.left {
+    background: #f2e9e4;
+    padding: 30px;
+}
+
+.right {
+    padding: 30px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    background: #ccc;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #2c5364;
+}
+
+/* DOWNLOAD BUTTON */
+.download-btn {
+    background: #2c5364;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Mobile */
+@media(max-width:768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #1e293b;
+        position: absolute;
+        top: 60px;
+        right: 1px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .cv-container, .cv-container * {
+        visibility: visible;
+    }
+    .cv-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+<header>
+    <div class="logo">Group 4</div>
+    <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#about us">About us</a>
+        <a href="index.html#contact">Contact us</a>
+        <a href="index.html#cv sect">Works</a>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    
+</header>
+
+    
+</div>
+
+<div class="member-list">
+    <button onclick="showCV('Anita Idedia','Full-Stack Developer with expertise in React and Node.js.','anita.idedia@gmail.com')">Anita</button>
+    <button onclick="showCV('Nwachukwu Michael','UI/UX Designer specializing in user-centered design and prototyping.','nwachukwumicheal700@gmail.com')">Michael</button>
+    <button onclick="showCV('Nwoko Uchenna Marcel','Backend Developer with experience in Django and database optimization.','nwokomarcel@gmail.com')">Marcel</button>
+    <button onclick="showCV('Isiguzoro Ekeledili Godwin','Cloud Engineer focused on scalable deployments and performance tuning.','itsthemightygr8@gmail.com')">David</button>
+    <button onclick="showCV('Eva Martinez','Software Architect with a background in system design and API development.','eva.martinez@example.com')">Eva</button>
+    <button onclick="showCV('Frank Wilson','DevOps Engineer skilled in CI/CD pipelines and cloud infrastructure.','frank.wilson@example.com')">Frank</button>
+    <button onclick="showCV('Grace Chen','Frontend Developer with a passion for responsive design and performance optimization.','grace.chen@example.com')">Grace</button>
+    <button onclick="showCV('Henry Davis','Data Engineer experienced in data processing pipelines and database management.','henry.davis@example.com')">Henry</button>
+    <button onclick="showCV('Irene Garcia','QA Engineer focused on testing automation and quality assurance processes.','irene.garcia@example.com')">Irene</button>
+    <button onclick="showCV('Jack Martinez','Project Manager with expertise in Agile methodologies and team coordination.','jack.martinez@example.com')">Jack</button>
+</div>
+<div class="download-btn-div">
+    <button class="download-btn" onclick="downloadPDF()">Download PDF</button>
+</div>
+<div class="cv-container" id="cvContainer">
+    <div class="cv">
+        <div class="left">
+            <div class="profile-img"></div>
+            <h2 id="cvName"></h2>
+            <p id="cvTitle"></p>
+
+            <div class="section-title">Contact</div>
+            <p id="cvEmail"></p>
+
+            <div class="section-title">Skills</div>
+            <p>✔ Teamwork</p>
+            <p>✔ Problem Solving</p>
+            <p>✔ Communication</p>
+        </div>
+
+        <div class="right">
+            <div class="section-title">Profile</div>
+            <p id="cvProfile"></p>
+
+            <div class="section-title">Work Experience</div>
+            <p>Company A (2021-2024)</p>
+            <p>Worked on scalable systems and cross-functional teams.</p>
+
+            <div class="section-title">Education</div>
+            <p>BSc in Computer Science</p>
+        </div>
+    </div>
+</div>
+
+<script>
+function showCV(name, title, email) {
+    document.getElementById("cvContainer").style.display = "block";
+    document.getElementById("cvName").innerText = name;
+    document.getElementById("cvTitle").innerText = title;
+    document.getElementById("cvEmail").innerText = email;
+    document.getElementById("cvProfile").innerText = title;
+}
+
+function downloadPDF() {
+    window.print();
+}
+function toggleMenu() {
+    document.getElementById("nav").classList.toggle("active");
+}
+
+</script>
+
+</body>
+</html>
