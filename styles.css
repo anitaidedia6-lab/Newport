@@ -10,12 +10,11 @@ body {
     color: #fff;
     line-height: 1.6;
     padding-top: 120px;
-    margin-top: 3px;
 }
 
 header {
     position: fixed;
-    top: 20px;
+    top: 15px;
     left: 50%;
     transform: translateX(-50%);
     width: 85%;
@@ -127,9 +126,9 @@ section {
 .card {
     background: #1e293b;
     padding: 25px;
-    margin-bottom: 15px;
     border-radius: 15px;
     transition: 0.3s;
+    margin-top: 4px;
 }
 
 .card:hover {
@@ -158,8 +157,9 @@ footer {
         background: #1e293b;
         position: absolute;
         top: 70px;
-        right: 8%;
+        right: 1px;
         padding: 20px;
+        border-radius: 10px;
     }
 
     nav.active {
@@ -357,6 +357,3 @@ footer {
 .tech-card:hover {
     background: rgba(56, 189, 248, 0.1);
 }
-
-
-
