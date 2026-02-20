@@ -280,32 +280,43 @@ footer {
 .video-card:hover {
     transform: translateY(-8px);
 }
-
+/* Contact Section */
 .contact-section {
-    text-align: center;
-    padding: 80px 8%;
+    text-align: center; /* centers headings and paragraphs */
+    padding: 40px 20px;
 }
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    gap: 30px;
-    margin: 40px 0;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+    gap: 20px;
+    justify-items: center; /* centers the content inside each card */
 }
 
 .contact-card {
     background: #1e293b;
-    backdrop-filter: blur(10px);
-    padding: 30px;
-    border-radius: 15px;
-    text-decoration: none;
     color: white;
-    transition: 0.3s;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.3s;
 }
 
 .contact-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     background: #334155;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr; /* stack cards vertically */
+        gap: 15px;
+    }
+    .contact-card {
+        width: 80%; /* optional: give some padding/margin on sides */
+        max-width: 350px;
+    }
 }
 
 .contact-form {
@@ -362,4 +373,5 @@ footer {
 .tech-card:hover {
     background: rgba(56, 189, 248, 0.1);
 }
+
 
