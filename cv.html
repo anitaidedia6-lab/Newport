@@ -14,10 +14,8 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: linear-gradient(to right, #0f172a, #1e293b);
     color: white;
-    padding-top: 100px; /* approximate header height + margin */
+    padding-top: 100px; 
 }
-
-/* NAVBAR */
 
 
 
@@ -79,8 +77,6 @@ nav a:hover {
     cursor: pointer;
 }
 
-
-/* Hero */
 .hero {
     height: 90vh;
     display: flex;
@@ -92,7 +88,7 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: clamp(2rem, 5vw, 3rem); /* min 2rem, max 3rem, adjusts with screen width */
+    font-size: clamp(2rem, 5vw, 3rem); /*it adjusts with the screen width */
 }
 
 .hero p {
@@ -138,7 +134,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 10px 5%; /* scales horizontally with screen size */
+    padding: 10px 5%; /* mobile responsive */
     gap: 10px;
 }
 
@@ -157,7 +153,7 @@ nav a:hover {
     background: #00c6ff;
 }
 
-/* CV CONTAINER */
+
 .cv-container {
     animation: fadeIn 0.5s ease-in-out;
 }
@@ -175,7 +171,6 @@ nav a:hover {
     display: none;
 }
 
-/* CV LAYOUT */
     @media(max-width:768px) {
 .cv {
         grid-template-columns: 1fr;
@@ -208,7 +203,6 @@ nav a:hover {
     color: #2c5364;
 }
 
-/* DOWNLOAD BUTTON */
 .download-btn {
     background: #2c5364;
     color: white;
@@ -217,7 +211,7 @@ nav a:hover {
     border-radius: 5px;
     cursor: pointer;
 }
-/* Mobile */
+/* Mobile responsiveness */
 @media(max-width:768px) {
     nav {
         display: none;
@@ -342,6 +336,7 @@ function toggleMenu() {
 
 </body>
 </html>
+
 
 
 
