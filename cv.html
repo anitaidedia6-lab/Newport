@@ -12,8 +12,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to right, #0f172a);
+    background: linear-gradient(to right, #0f172a, #1e293b);
     color: white;
+    padding-top: 100px; /* approximate header height + margin */
 }
 
 /* NAVBAR */
@@ -91,10 +92,11 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: clamp(2rem, 5vw, 3rem); /* min 2rem, max 3rem, adjusts with screen width */
 }
 
 .hero p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
     margin: 20px 0;
     color: #cbd5e1;
 }
@@ -134,19 +136,21 @@ nav a:hover {
 /* MEMBER BUTTONS */
 .member-list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    padding: 10px 5%; /* scales horizontally with screen size */
     gap: 10px;
-    padding: 90px 50px;
 }
 
 .member-list button {
     background: #1c3b50;
     border: 1px solid #00c6ff;
     color: white;
-    padding: 10px 15px;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
+    padding: 0.5em 1em;
+    font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
 .member-list button:hover {
@@ -154,6 +158,13 @@ nav a:hover {
 }
 
 /* CV CONTAINER */
+.cv-container {
+    animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 .cv-container {
     width: 80%;
     margin: 30px auto;
@@ -165,9 +176,13 @@ nav a:hover {
 }
 
 /* CV LAYOUT */
+    @media(max-width:768px) {
 .cv {
-    display: grid;
-    grid-template-columns: 35% 65%;
+        grid-template-columns: 1fr;
+    }
+.left, .right {
+        padding: 20px;
+    }
 }
 
 .left {
@@ -180,8 +195,8 @@ nav a:hover {
 }
 
 .profile-img {
-    width: 120px;
-    height: 120px;
+    width: clamp(80px, 15vw, 150px);
+    height: clamp(80px, 15vw, 150px);
     background: #ccc;
     border-radius: 50%;
     margin-bottom: 20px;
@@ -228,7 +243,10 @@ nav a:hover {
 @media print {
     body * {
         visibility: hidden;
+    .download-btn, .member-list, header {
+        display: none;
     }
+}
     .cv-container, .cv-container * {
         visibility: visible;
     }
@@ -324,6 +342,7 @@ function toggleMenu() {
 
 </body>
 </html>
+
 
 
 
