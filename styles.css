@@ -68,7 +68,6 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* Hero */
 .hero {
     height: 90vh;
     display: flex;
@@ -126,7 +125,7 @@ section {
 .card {
     background: #1e293b;
     padding: 25px;
-    margin: 10px;                     /* space between cards */
+    margin: 10px;                    
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     margin-bottom: 15px;
     border-radius: 15px;
@@ -146,13 +145,12 @@ footer {
     margin-top: 40px;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
     from {opacity: 0; transform: translateY(20px);}
     to {opacity: 1; transform: translateY(0);}
 }
 
-/* Mobile */
 @media(max-width:768px) {
     nav {
         display: none;
@@ -189,7 +187,6 @@ footer {
     margin: 60px 0;
 }
 
-/* APP SHOWCASE */
 .app-showcase {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
@@ -216,7 +213,6 @@ footer {
     margin-bottom: 15px;
 }
 
-/*  App Designs */
 .ecommerce {
     background: linear-gradient(135deg, #38bdf8, #0ea5e9);
 }
@@ -229,7 +225,6 @@ footer {
     background: linear-gradient(135deg, #a855f7, #7e22ce);
 }
 
-/* MODAL */
 .modal {
     display: none;
     position: fixed;
@@ -257,7 +252,6 @@ footer {
     cursor: pointer;
 }
 
-/* VIDEO BLOG */
 .video-blog {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
@@ -283,7 +277,6 @@ footer {
     transform: translateY(-8px);
 }
 
-/* ----- CONTACT SECTION RESPONSIVE ----- */
 .contact-section {
     padding: 40px 20px;
     text-align: center;
@@ -303,11 +296,10 @@ footer {
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
-    width: 250px;       /* keeps desktop layout consistent */
-    margin: 0 auto;     /* centers cards when wrapped */
+    width: 250px;        
+    margin: 0 auto;    
 }
 
-/* Contact form styling */
 .contact-form {
     margin-top: 30px;
     display: flex;
@@ -333,14 +325,13 @@ footer {
     color: #000;
     cursor: pointer;
 }
-
-/* ----- MOBILE ADJUSTMENTS ----- */
+/*Mobile responsive*/
 @media (max-width: 768px) {
     .contact-grid {
-        justify-content: center;  /* centers all cards on phone */
+        justify-content: center;  
     }
     .contact-card {
-        width: 80%;  /* narrower cards on mobile */
+        width: 80%;  
     }
     .contact-form input,
     .contact-form textarea {
@@ -379,6 +370,7 @@ footer {
 .tech-card:hover {
     background: rgba(56, 189, 248, 0.1);
 }
+
 
 
 
