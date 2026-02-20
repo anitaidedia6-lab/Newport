@@ -310,7 +310,6 @@ footer {
 .contact-form {
     margin-top: 30px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
@@ -340,7 +339,7 @@ footer {
         justify-content: center;  /* centers all cards on phone */
     }
     .contact-card {
-        width: 80%;  /* narrower cards on mobile */
+        width: 90%;  /* narrower cards on mobile */
     }
     .contact-form input,
     .contact-form textarea {
@@ -379,5 +378,6 @@ footer {
 .tech-card:hover {
     background: rgba(56, 189, 248, 0.1);
 }
+
 
 
