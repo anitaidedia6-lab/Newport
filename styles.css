@@ -290,6 +290,7 @@ footer {
 }
 
 .contact-grid {
+    width: max-width;
     display: flex;
     justify-content: space-around; /* desktop: spreads evenly */
     flex-wrap: wrap;               /* allows wrapping on smaller screens */
@@ -378,6 +379,7 @@ footer {
 .tech-card:hover {
     background: rgba(56, 189, 248, 0.1);
 }
+
 
 
 
