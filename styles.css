@@ -310,7 +310,7 @@ footer {
 .contact-form {
     margin-top: 30px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
@@ -379,4 +379,5 @@ footer {
 .tech-card:hover {
     background: rgba(56, 189, 248, 0.1);
 }
+
 
