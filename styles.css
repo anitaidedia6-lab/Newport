@@ -151,6 +151,7 @@ footer {
     to {opacity: 1; transform: translateY(0);}
 }
 
+/*Mobile Responsiveness*/
 @media(max-width:768px) {
     nav {
         display: none;
@@ -189,7 +190,7 @@ footer {
 
 .app-showcase {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));   /*adapts to the screen sizee*/
     gap: 30px;
     margin-top: 40px;
 }
@@ -254,7 +255,7 @@ footer {
 
 .video-blog {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); /*Mobile responsive;adapts to the size of the screen*/
     gap: 30px;
     margin-top: 40px;
 }
@@ -371,6 +372,7 @@ footer {
 .tech-card:hover {
     background: rgba(56, 189, 248, 0.1);
 }
+
 
 
 
