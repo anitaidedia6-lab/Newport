@@ -297,7 +297,8 @@ footer {
     border-radius: 10px;
     text-decoration: none;
     width: 250px;        
-    margin: 0 auto;    
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .contact-form {
@@ -370,6 +371,7 @@ footer {
 .tech-card:hover {
     background: rgba(56, 189, 248, 0.1);
 }
+
 
 
 
